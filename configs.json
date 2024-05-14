@@ -1,0 +1,9 @@
+{
+  "save_path": "D:\\Projects\\PersonAdaptationExperiment\\not_random_results.hdf5",
+  "person_name": "test",
+  "test_id": "",
+  "num_commands": 36,
+  "command_time": 3.0,
+  "command_capture_time": 1.0,
+  "show_cursor": false
+}

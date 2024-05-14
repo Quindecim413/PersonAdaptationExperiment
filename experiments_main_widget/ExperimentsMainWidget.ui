@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExperimentsMainWidget</class>
+ <widget class="QWidget" name="ExperimentsMainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>539</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Эээксперименты на повторение в слепую</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QPushButton" name="cam_select_btn">
+     <property name="text">
+      <string>Настройка камеры</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Базовые настройки</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="ConfigureExperimentWidget" name="configure_experiment_widget" native="true"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="hands_experiment_btn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>Эксперимент с руками</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="head_experiment_btn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>Эксперимент с головой</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="glasses_experiment_btn">
+     <property name="text">
+      <string>Эксперимент с очками</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ConfigureExperimentWidget</class>
+   <extends>QWidget</extends>
+   <header>qtforms.ConfigureExperimentWidget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
